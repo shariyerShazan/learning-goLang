@@ -14,4 +14,27 @@ func main (){
 	}else {
 		fmt.Println("Not a valid age!")
 	}
+
+
+	role := "admin" 
+	isAuthenticated :=  true
+
+	if role == "admin" && isAuthenticated {
+		fmt.Println("Welcome admin")
+	} else if role == "admin" {
+        fmt.Println("well, you are admin. but not authenticated. please login first")
+	} else {
+		fmt.Println("Sorry: Access forbidden")
+	}
+
+
+	name := "shazan"
+    password := 12930012
+    var role1 = ""
+
+    if name == "" || password == 0 || role1 == "" {
+        fmt.Println("Something is missing")
+    } else {
+        fmt.Println("All good!")
+    }
 }
