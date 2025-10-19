@@ -42,5 +42,5 @@ func main(){
 		default : fmt.Println("Invalid type! please try again" , TYPE)
 		}
 	}
-	dataType("23")
+	dataType(1)
 }
