@@ -5,6 +5,8 @@ import (
 	"time"
 )
 
+
+// number switch
 func main(){
 	i := 2
 	switch i {
@@ -21,6 +23,8 @@ func main(){
 	     fmt.Println("Wrong input")
 	 }
 
+
+	//  date with switch
 	 switch time.Now().Weekday(){
 	    case time.Sunday , time.Friday :
 		    fmt.Println("It's weekend")
@@ -28,4 +32,15 @@ func main(){
 		    fmt.Println("Work day")
 	 }
 
+
+	//  data type check by switch and function
+	dataType := func(i interface{}){
+		switch TYPE := i.(type){
+		case int : fmt.Println("It's a integer")
+		case string : fmt.Println("It's a string")
+		case bool : fmt.Println("It's a boolan")
+		default : fmt.Println("Invalid type! please try again" , TYPE)
+		}
+	}
+	dataType("23")
 }
