@@ -14,5 +14,5 @@ func main(){
 	 fmt.Println(result)
 	 
 	 lang1 , lang2 , lang3 , _ := multiReturn()
-	 fmt.Println(lang1 , lang2 , lang3)
+	 fmt.Println(lang1 , lang2 , lang3) // output is -> "javaScript" , "typeScript" , "goLang" 
 }
